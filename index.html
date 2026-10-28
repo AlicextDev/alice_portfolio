@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F0D8E2">
+  <meta name="description" content="Portfólio de Alice Tavares — Dados, Automação e Desenvolvimento de Software.">
+
+  <title>Alice Xavier — Portfólio Interativo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="mouse-spotlight" id="spotlight"></div>
+  <div class="ambient-sparkles" id="ambientSparkles" aria-hidden="true"></div>
+  <div class="progress" id="progress"></div>
+
+  <!-- CABEÇALHO -->
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Alice, início">
+      A<span>.</span>
+    </a>
+
+    <nav id="nav">
+      <a href="#sobre" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a>
+      <a href="#projetos" class="nav-link" data-pt="Projetos" data-en="Projects">Projetos</a>
+      <a href="#experiencia" class="nav-link" data-pt="Trajetória" data-en="Experience">Trajetória</a>
+      <a href="#contato" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a>
+    </nav>
+
+    <div class="topbar-controls">
+      <button
+        class="lang-toggle-btn"
+        id="langToggle"
+        title="Alterar Idioma / Switch Language"
+        aria-label="Alterar idioma"
+      >
+        <span id="langText">EN</span>
+      </button>
+    </div>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <a class="top-cta" href="#contato" aria-label="Ir para contato">↗</a>
+  </header>
+
+  <main>
+    <!-- INÍCIO / HERO -->
+    <section class="hero dark-section" id="inicio">
+      <!-- Brilhos animados na seção Início -->
+      <svg class="sparkle-decor sparkle-float" style="top: 18%; left: 3%; width: 26px; height: 26px;" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-twinkle" style="bottom: 14%; left: 42%; width: 20px; height: 20px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-pulse" style="top: 72%; right: 7%; width: 24px; height: 24px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          PORTFÓLIO • 2026
+        </p>
+
+        <p
+          class="hello"
+          data-pt="Olá, eu sou a"
+          data-en="Hello, I am"
+        >
+          Olá, eu sou a
+        </p>
+
+        <h1>
+          <span class="underline-name"><em>Alice</em></span>
+          <span class="dot-accent">.</span>
+        </h1>
+
+        <p
+          class="hero-role"
+          data-pt="Dados, Automação e Desenvolvimento de Software"
+          data-en="Data, Automation & Software Development"
+        >
+          Dados, Automação e Desenvolvimento de Software
+        </p>
+
+        <p
+          class="hero-text"
+          data-pt="Estudante de Ciência da Computação. Transformo problemas em soluções por meio de tecnologia, análise de dados e automação inteligente."
+          data-en="Computer Science student. Transforming challenges into solutions through technology, data analysis, and smart automation."
+        >
+          Estudante de Ciência da Computação. Transformo problemas em soluções por meio de tecnologia, análise de dados e automação inteligente.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="#projetos"
+            data-pt="Explorar projetos ↗"
+            data-en="Explore projects ↗"
+          >
+            Explorar projetos <span>↗</span>
+          </a>
+
+          <a
+            class="button button-outline"
+            href="Componetes/CURRICULO_AliceXavier.pdf"
+            download
+            data-pt="Baixar CV (PDF) 📄"
+            data-en="Download CV (PDF) 📄"
+          >
+            Baixar CV (PDF) <span>📄</span>
+          </a>
+        </div>
+
+        <div class="hero-foot">
+          <span class="scroll-icon">↓</span>
+          <span data-pt="Role para explorar" data-en="Scroll to explore">
+            Role para explorar
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Arte decorativa">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="art-grid"></div>
+
+        <svg class="spinning-star star-hero" viewBox="0 0 100 100" aria-hidden="true">
+          <path fill="currentColor" d="M50 0 L58 38 L96 20 L68 48 L100 62 L62 62 L78 98 L50 68 L22 98 L38 62 L0 62 L32 48 L4 20 L42 38 Z"/>
+        </svg>
+
+        <div class="floating-badge badge-python">
+          <svg class="badge-star" viewBox="0 0 100 100" aria-hidden="true">
+            <path fill="currentColor" d="M50 0 L58 38 L96 20 L68 48 L100 62 L62 62 L78 98 L50 68 L22 98 L38 62 L0 62 L32 48 L4 20 L42 38 Z"/>
+          </svg>
+
+          <div>
+            <span>Python</span>
+            <strong>lover.</strong>
+          </div>
+        </div>
+
+        <div class="floating-note note-one">
+          <span data-pt="FOCO ATUAL" data-en="CURRENT FOCUS">FOCO ATUAL</span>
+          <strong>Software + Dados</strong>
+          <i data-pt="criando conexões" data-en="building connections">
+            criando conexões
+          </i>
+        </div>
+
+        <div class="floating-note note-two">
+          <span data-pt="STATUS" data-en="STATUS">STATUS</span>
+
+          <strong>
+            <b class="status-dot"></b>
+            <span data-pt="Em evolução" data-en="Evolving">Em evolução</span>
+          </strong>
+
+          <i data-pt="sempre aprendendo" data-en="always learning">
+            sempre aprendendo
+          </i>
+        </div>
+
+        <div class="vertical-label">
+          IDEIAS / DADOS / CÓDIGO / SOLUÇÕES
+        </div>
+
+        <div class="hero-monogram">A<span>.</span></div>
+      </div>
+
+      <div class="hero-index">01 <span>— / 06</span></div>
+    </section>
+
+    <!-- BANNER INFINITO -->
+    <div class="marquee-banner">
+      <div class="marquee-track">
+        <span
+          data-pt="UM COMMIT POR VEZ ✱ DADOS ✱ AUTOMAÇÃO ✱ DESENVOLVIMENTO ✱ INTELIGÊNCIA ARTIFICIAL ✱ "
+          data-en="ONE COMMIT AT A TIME ✱ DATA ✱ AUTOMATION ✱ DEVELOPMENT ✱ ARTIFICIAL INTELLIGENCE ✱ "
+        >
+          UM COMMIT POR VEZ ✱ DADOS ✱ AUTOMAÇÃO ✱ DESENVOLVIMENTO ✱ INTELIGÊNCIA ARTIFICIAL ✱
+        </span>
+
+        <span
+          data-pt="UM COMMIT POR VEZ ✱ DADOS ✱ AUTOMAÇÃO ✱ DESENVOLVIMENTO ✱ INTELIGÊNCIA ARTIFICIAL ✱ "
+          data-en="ONE COMMIT AT A TIME ✱ DATA ✱ AUTOMATION ✱ DEVELOPMENT ✱ ARTIFICIAL INTELLIGENCE ✱ "
+        >
+          UM COMMIT POR VEZ ✱ DADOS ✱ AUTOMAÇÃO ✱ DESENVOLVIMENTO ✱ INTELIGÊNCIA ARTIFICIAL ✱
+        </span>
+      </div>
+    </div>
+
+    <!-- 01. SOBRE MIM -->
+    <section class="about light-section section" id="sobre">
+      <!-- Brilhos animados na seção Sobre Mim -->
+      <svg class="sparkle-decor sparkle-pulse" style="top: 8%; right: 5%; width: 24px; height: 24px;" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-float" style="bottom: 10%; left: 2%; width: 22px; height: 22px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+
+      <div class="section-kicker reveal">
+        <span data-pt="01 / SOBRE MIM" data-en="01 / ABOUT ME">01 / SOBRE MIM</span>
+        <span class="kicker-line"></span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <h2
+            data-pt="Tecnologia,<br><em>dados e propósito.</em>"
+            data-en="Technology,<br><em>data & purpose.</em>"
+          >
+            Tecnologia,<br><em>dados e propósito.</em>
+          </h2>
+
+          <p
+            data-pt="Sou estudante de Ciência da Computação na Universidade Católica de Brasília e estagiária de Desenvolvimento de Software na CDS Solutions. Tenho forte interesse em explorar como a tecnologia pode simplificar processos e resolver problemas do dia a dia."
+            data-en="Computer Science student at Catholic University of Brasília and Software Development Intern at CDS Solutions. Enthusiastic about simplifying processes through technology."
+          >
+            Sou estudante de Ciência da Computação na Universidade Católica de Brasília e estagiária de Desenvolvimento de Software na CDS Solutions. Tenho forte interesse em explorar como a tecnologia pode simplificar processos e resolver problemas do dia a dia.
+          </p>
+
+          <p
+            data-pt="Ao longo da minha trajetória, desenvolvi soluções que conectam desenvolvimento web/backend, integração de APIs REST, análise de dados (Python/Pandas/SQL), automação de processos (RPA) e Machine Learning."
+            data-en="Experienced in full-stack web concepts, REST API integrations, data analysis (Python/Pandas/SQL), process automation (RPA), and Machine Learning models."
+          >
+            Ao longo da minha trajetória, desenvolvi soluções que conectam desenvolvimento web/backend, integração de APIs REST, análise de dados (Python/Pandas/SQL), automação de processos (RPA) e Machine Learning.
+          </p>
+
+          <a
+            class="text-link"
+            href="#experiencia"
+            data-pt="Conheça minha trajetória ↗"
+            data-en="Discover my journey ↗"
+          >
+            Conheça minha trajetória <span>↗</span>
+          </a>
+        </div>
+
+        <div class="about-aside reveal">
+          <div class="arch-frame-container">
+            <div class="arch-bg-tilt"></div>
+
+            <div class="arch-photo-wrapper">
+              <img
+                src="Componetes/foto.jpeg"
+                alt="Alice"
+                class="arch-photo"
+              >
+            </div>
+
+            <svg class="spinning-star star-about" viewBox="0 0 100 100" aria-hidden="true">
+              <path fill="currentColor" d="M50 0 L58 38 L96 20 L68 48 L100 62 L62 62 L78 98 L50 68 L22 98 L38 62 L0 62 L32 48 L4 20 L42 38 Z"/>
+            </svg>
+
+            <div class="arch-note-card">
+              <span data-pt="the face behind" data-en="the face behind">the face behind</span>
+              <strong>the pixels ♡</strong>
+            </div>
+          </div>
+
+          <div class="aside-caption">
+            <span>FIG. 001 —</span>
+            <span data-pt="THAT'S ME" data-en="THAT'S ME">THAT'S ME</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="focus-grid reveal">
+        <article>
+          <span class="focus-number">01</span>
+          <div class="focus-icon">⌘</div>
+          <h3 data-pt="Desenvolvimento" data-en="Development">Desenvolvimento</h3>
+          <p
+            data-pt="Funcionalidades, APIs REST, Node.js, testes e arquitetura."
+            data-en="Features, REST APIs, Node.js, testing & software architecture."
+          >
+            Funcionalidades, APIs REST, Node.js, testes e arquitetura.
+          </p>
+        </article>
+
+        <article>
+          <span class="focus-number">02</span>
+          <div class="focus-icon">⌁</div>
+          <h3 data-pt="Análise de Dados" data-en="Data Analysis">Análise de Dados</h3>
+          <p
+            data-pt="Python, Pandas, SQL, MySQL e Dashboards preditivos."
+            data-en="Python, Pandas, SQL, MySQL & predictive dashboards."
+          >
+            Python, Pandas, SQL, MySQL e Dashboards preditivos.
+          </p>
+        </article>
+
+        <article>
+          <span class="focus-number">03</span>
+          <div class="focus-icon">↗</div>
+          <h3 data-pt="Automação & RPA" data-en="Automation & RPA">Automação & RPA</h3>
+          <p
+            data-pt="ServiceNow Flow Designer, PyAutoGUI e otimização de rotinas."
+            data-en="ServiceNow Flow Designer, PyAutoGUI & workflow automation."
+          >
+            ServiceNow Flow Designer, PyAutoGUI e otimização de rotinas.
+          </p>
+        </article>
+
+        <article>
+          <span class="focus-number">04</span>
+          <div class="focus-icon">⟷</div>
+          <h3 data-pt="IA & Aplicados" data-en="AI & Machine Learning">IA & Aplicados</h3>
+          <p
+            data-pt="Modelos Preditivos (Machine Learning), OCR e IA Generativa."
+            data-en="Predictive Models (Machine Learning), OCR & Generative AI."
+          >
+            Modelos Preditivos (Machine Learning), OCR e IA Generativa.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02. PROJETOS -->
+    <section class="projects light-section section" id="projetos">
+      <!-- Brilhos animados na seção Projetos -->
+      <svg class="sparkle-decor sparkle-twinkle" style="top: 4%; right: 4%; width: 24px; height: 24px;" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-pulse" style="bottom: 4%; left: 4%; width: 22px; height: 22px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+
+      <div class="section-kicker reveal">
+        <span data-pt="02 / PROJETOS" data-en="02 / PROJECTS">02 / PROJETOS</span>
+        <span class="kicker-line"></span>
+        <span class="mono">SELECTED WORK</span>
+      </div>
+
+      <div class="projects-heading reveal">
+        <h2
+          data-pt="Soluções reais.<br><em>Aprendizado contínuo.</em>"
+          data-en="Real solutions.<br><em>Continuous learning.</em>"
+        >
+          Soluções reais.<br><em>Aprendizado contínuo.</em>
+        </h2>
+
+        <p
+          data-pt="Projetos desenvolvidos unindo desenvolvimento, inteligência aplicada, dados e automação."
+          data-en="Projects developed uniting software development, applied AI, data, and automation."
+        >
+          Projetos desenvolvidos unindo desenvolvimento, inteligência aplicada, dados e automação.
+        </p>
+      </div>
+
+      <div class="project-filters reveal" role="group" aria-label="Filtrar projetos">
+        <button class="filter-chip selected" data-filter="all" data-pt="Todos" data-en="All">Todos</button>
+        <button class="filter-chip" data-filter="data" data-pt="Dados" data-en="Data">Dados</button>
+        <button class="filter-chip" data-filter="dev" data-pt="Desenvolvimento" data-en="Dev">Desenvolvimento</button>
+        <button class="filter-chip" data-filter="automation" data-pt="Automação" data-en="Automation">Automação</button>
+      </div>
+
+      <div class="project-grid">
+        <!-- Projeto 1 -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-visual visual-flow">
+            <div class="flow-step">
+              <span>01</span>
+              <b data-pt="Receita" data-en="Receipt">Receita</b>
+              <small>Upload / OCR</small>
+            </div>
+
+            <div class="flow-arrow">→</div>
+
+            <div class="flow-step active">
+              <span>02</span>
+              <b data-pt="Validação" data-en="Validation">Validação</b>
+              <small>API REST</small>
+            </div>
+
+            <div class="flow-arrow">→</div>
+
+            <div class="flow-step">
+              <span>03</span>
+              <b data-pt="Estoque" data-en="Inventory">Estoque</b>
+              <small>Flow Designer</small>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>SERVICENOW / OCR</span>
+              <span>01</span>
+            </div>
+
+            <h3
+              data-pt="FarmáciaSUS (Liderança Técnica)"
+              data-en="FarmáciaSUS (Technical Leadership)"
+            >
+              FarmáciaSUS (Liderança Técnica)
+            </h3>
+
+            <p
+              data-pt="Aplicação em ServiceNow para gestão de estoque de medicamentos na saúde pública. Inclui widget com validação de receitas por OCR, APIs REST e automação com Flow Designer. Selecionado para o Coday (Porto Digital)."
+              data-en="ServiceNow application for public health medicine inventory management. Includes OCR prescription validation, REST APIs, and Flow Designer automation. Selected for Coday."
+            >
+              Aplicação em ServiceNow para gestão de estoque de medicamentos na saúde pública. Inclui widget com validação de receitas por OCR, APIs REST e automação com Flow Designer. Selecionado para o Coday (Porto Digital).
+            </p>
+
+            <div class="tags">
+              <span>ServiceNow</span>
+              <span>OCR</span>
+              <span>Flow Designer</span>
+              <span>APIs REST</span>
+            </div>
+
+            <a
+              href="#contato"
+              class="project-link"
+              data-pt="Projeto Corporativo / Apresentado no Coday ↗"
+              data-en="Corporate Project / Presented at Coday ↗"
+            >
+              Projeto Corporativo / Apresentado no Coday ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="project-card reveal" data-category="data">
+          <div class="project-visual visual-dashboard">
+            <div class="mini-window">
+              <div class="mini-top">
+                <i></i><i></i><i></i>
+                <span>churn_analysis.py</span>
+              </div>
+
+              <div class="mini-content">
+                <div class="mini-bars">
+                  <i style="height:85%"></i>
+                  <i style="height:42%"></i>
+                  <i style="height:68%"></i>
+                  <i style="height:22%"></i>
+                  <i style="height:50%"></i>
+                </div>
+
+                <div class="mini-line">↓ <span>Churn -18%</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>DADOS / PYTHON</span>
+              <span>02</span>
+            </div>
+
+            <h3 data-pt="Análise de Churn Rate" data-en="Churn Rate Analysis">
+              Análise de Churn Rate
+            </h3>
+
+            <p
+              data-pt="Projeto em Python que utiliza dashboards para diagnosticar taxa de rotatividade de 56%, analisando causas e orientando um plano de ação para reduzir cancelamentos de clientes."
+              data-en="Python project utilizing dashboards to diagnose a 56% turnover rate, analyzing key drivers to support customer retention strategy."
+            >
+              Projeto em Python que utiliza dashboards para diagnosticar taxa de rotatividade de 56%, analisando causas e orientando um plano de ação para reduzir cancelamentos de clientes.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Jupyter</span>
+              <span>Pandas</span>
+              <span>Data Viz</span>
+            </div>
+
+            <a
+              href="https://github.com/AlicextDev/Python-Insights-Analisando-Dados-com-Python"
+              target="_blank"
+              rel="noreferrer"
+              class="project-link"
+              data-pt="Ver no GitHub ↗"
+              data-en="View on GitHub ↗"
+            >
+              Ver no GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="project-card reveal" data-category="automation">
+          <div class="project-visual visual-api">
+            <div class="code-window">
+              <div class="mini-top">
+                <i></i><i></i><i></i>
+                <span>automation.py</span>
+              </div>
+
+              <pre><span class="code-pink">import</span> pyautogui
+<span class="code-pink">import</span> pandas <span class="code-pink">as</span> pd
+<span class="code-key">df</span> = pd.read_excel(<span class="code-green">"produtos.xlsx"</span>)
+<span class="code-key">status</span> = <span class="code-green">"Cadastro Concluído"</span></pre>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>AUTOMAÇÃO / RPA</span>
+              <span>03</span>
+            </div>
+
+            <h3
+              data-pt="Automação de Processos & Tarefas"
+              data-en="Process & Task Automation"
+            >
+              Automação de Processos & Tarefas
+            </h3>
+
+            <p
+              data-pt="Scripts em Python utilizando PyAutoGUI e Pandas para cadastro diário de milhares de produtos em sistemas corporativos e automação de rotinas administrativas e envio de relatórios."
+              data-en="Python scripts using PyAutoGUI and Pandas for automated daily product registration in enterprise systems and report dispatch."
+            >
+              Scripts em Python utilizando PyAutoGUI e Pandas para cadastro diário de milhares de produtos em sistemas corporativos e automação de rotinas administrativas e envio de relatórios.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>PyAutoGUI</span>
+              <span>Pandas</span>
+              <span>Excel</span>
+            </div>
+
+            <a
+              href="https://github.com/AlicextDev/Python-Power-Up-Automa-o-de-Tarefas"
+              target="_blank"
+              rel="noreferrer"
+              class="project-link"
+              data-pt="Ver no GitHub ↗"
+              data-en="View on GitHub ↗"
+            >
+              Ver no GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Projeto 4 -->
+        <article class="project-card reveal" data-category="data">
+          <div class="project-visual visual-api">
+            <div class="code-window">
+              <div class="mini-top">
+                <i></i><i></i><i></i>
+                <span>model_ml.py</span>
+              </div>
+
+              <pre><span class="code-pink">from</span> sklearn <span class="code-pink">import</span> RandomForest
+<span class="code-key">model</span> = RandomForestClassifier()
+<span class="code-key">model</span>.fit(X_train, y_train)
+<span class="code-pink">print</span>(<span class="code-green">"Pontuação Calculada"</span>)</pre>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>MACHINE LEARNING / IA</span>
+              <span>04</span>
+            </div>
+
+            <h3
+              data-pt="IA & Previsão de Credit Scoring"
+              data-en="AI & Credit Scoring Prediction"
+            >
+              IA & Previsão de Credit Scoring
+            </h3>
+
+            <p
+              data-pt="Modelo de Machine Learning em Python para previsão de pontuação de crédito. O código prepara dados, treina e compara modelos (RandomForest e KNN) aplicados à classificação de clientes."
+              data-en="Machine Learning model in Python for credit score estimation. Prepares customer data, trains, and compares models (RandomForest and KNN)."
+            >
+              Modelo de Machine Learning em Python para previsão de pontuação de crédito. O código prepara dados, treina e compara modelos (RandomForest e KNN) aplicados à classificação de clientes.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>RandomForest</span>
+              <span>KNN</span>
+            </div>
+
+            <a
+              href="https://github.com/AlicextDev/Python-IA-Intelig-ncia-Artificial-e-Previs-es"
+              target="_blank"
+              rel="noreferrer"
+              class="project-link"
+              data-pt="Ver no GitHub ↗"
+              data-en="View on GitHub ↗"
+            >
+              Ver no GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Projeto 5 -->
+        <article class="project-card reveal" data-category="dev">
+          <div class="project-visual visual-api">
+            <div class="code-window">
+              <div class="mini-top">
+                <i></i><i></i><i></i>
+                <span>server.js</span>
+              </div>
+
+              <pre><span class="code-pink">const</span> express = require(<span class="code-green">'express'</span>);
+<span class="code-key">app</span>.get(<span class="code-green">'/flashcards'</span>, (req, res) => {
+  res.json({ <span class="code-key">status</span>: <span class="code-green">"Pomodoro Active"</span> });
+});</pre>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>FULL STACK / DEV</span>
+              <span>05</span>
+            </div>
+
+            <h3 data-pt="Estudo da Raposa" data-en="Fox Study Platform">
+              Estudo da Raposa
+            </h3>
+
+            <p
+              data-pt="Plataforma de estudos Full Stack completa com métodos Pomodoro, sistema de Flashcards e gestão de materiais. Desenvolvida utilizando HTML, CSS, JavaScript, Node.js e SQL."
+              data-en="Full Stack study platform featuring Pomodoro timers, Flashcards system, and study material management built with Node.js and SQL."
+            >
+              Plataforma de estudos Full Stack completa com métodos Pomodoro, sistema de Flashcards e gestão de materiais. Desenvolvida utilizando HTML, CSS, JavaScript, Node.js e SQL.
+            </p>
+
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>SQL</span>
+              <span>HTML/CSS</span>
+            </div>
+
+            <a
+              href="https://github.com/AlicextDev/Estudo-da-raposa"
+              target="_blank"
+              rel="noreferrer"
+              class="project-link"
+              data-pt="Ver no GitHub ↗"
+              data-en="View on GitHub ↗"
+            >
+              Ver no GitHub ↗
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03. COMPETÊNCIAS -->
+    <section class="skills light-section section" id="competencias">
+      <!-- Brilhos animados na seção Stack -->
+      <svg class="sparkle-decor sparkle-float" style="top: 8%; left: 3%; width: 22px; height: 22px;" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-twinkle" style="bottom: 6%; right: 4%; width: 24px; height: 24px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+
+      <div class="section-kicker reveal">
+        <span data-pt="03 / STACK" data-en="03 / STACK">03 / STACK</span>
+        <span class="kicker-line"></span>
+        <span class="mono">TOOLS I WORK WITH</span>
+      </div>
+
+      <div class="skills-heading reveal">
+        <h2
+          data-pt="Ferramentas para<br><em>tirar ideias do papel.</em>"
+          data-en="Tools to bring<br><em>ideas to life.</em>"
+        >
+          Ferramentas para<br><em>tirar ideias do papel.</em>
+        </h2>
+
+        <p
+          data-pt="Habilidades e tecnologias utilizadas na construção das minhas soluções."
+          data-en="Skills and technologies utilized to build scalable solutions."
+        >
+          Habilidades e tecnologias utilizadas na construção das minhas soluções.
+        </p>
+      </div>
+
+      <div class="skills-grid reveal">
+        <article>
+          <span class="skill-index">01</span>
+          <h3 data-pt="Dados & Análise" data-en="Data & Analytics">Dados & Análise</h3>
+          <div class="skill-list">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>SQL</span>
+            <span>MySQL</span>
+            <span>Excel</span>
+            <span>Looker Studio</span>
+          </div>
+        </article>
+
+        <article>
+          <span class="skill-index">02</span>
+          <h3 data-pt="Desenvolvimento" data-en="Development">Desenvolvimento</h3>
+          <div class="skill-list">
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>HTML5 / CSS3</span>
+            <span>APIs REST</span>
+            <span>CRUD</span>
+          </div>
+        </article>
+
+        <article>
+          <span class="skill-index">03</span>
+          <h3 data-pt="Automação & IA" data-en="Automation & AI">Automação & IA</h3>
+          <div class="skill-list">
+            <span>PyAutoGUI</span>
+            <span>ServiceNow</span>
+            <span>Flow Designer</span>
+            <span>OCR</span>
+            <span>Machine Learning</span>
+          </div>
+        </article>
+
+        <article>
+          <span class="skill-index">04</span>
+          <h3 data-pt="Ferramentas & Ágil" data-en="Tools & Agile">Ferramentas & Ágil</h3>
+          <div class="skill-list">
+            <span>Git / GitHub</span>
+            <span>Docker</span>
+            <span>Postman / Insomnia</span>
+            <span>Scrum</span>
+            <span>Kanban</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04. TRAJETÓRIA -->
+    <section class="experience dark-section section" id="experiencia">
+      <!-- Brilhos animados na seção Trajetória -->
+      <svg class="sparkle-decor sparkle-pulse" style="top: 6%; right: 5%; width: 26px; height: 26px;" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-float" style="bottom: 6%; left: 4%; width: 22px; height: 22px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+
+      <div class="section-kicker light-kicker reveal">
+        <span data-pt="04 / TRAJETÓRIA" data-en="04 / EXPERIENCE">04 / TRAJETÓRIA</span>
+        <span class="kicker-line"></span>
+        <span class="mono">EXPERIENCE & LEARNING</span>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-intro reveal">
+          <h2
+            data-pt="Minha jornada<br><em>em construção.</em>"
+            data-en="My journey<br><em>in evolution.</em>"
+          >
+            Minha jornada<br><em>em construção.</em>
+          </h2>
+
+          <p
+            data-pt="Formação acadêmica e experiências práticas em desenvolvimento de software, operação de dados e metodologias ágeis."
+            data-en="Academic education and practical experience in software development, data operations, and agile methods."
+          >
+            Formação acadêmica e experiências práticas em desenvolvimento de software, operação de dados e metodologias ágeis.
+          </p>
+
+          <div class="exp-stamp">
+            LEARN<br>BUILD<br>REPEAT<span>↗</span>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+
+            <span
+              class="timeline-date"
+              data-pt="FORMAÇÃO • 2024 — 2027"
+              data-en="EDUCATION • 2024 — 2027"
+            >
+              FORMAÇÃO • 2024 — 2027
+            </span>
+
+            <h3
+              data-pt="Bacharelado em Ciência da Computação"
+              data-en="Bachelor's Degree in Computer Science"
+            >
+              Bacharelado em Ciência da Computação
+            </h3>
+
+            <h4
+              data-pt="Universidade Católica de Brasília"
+              data-en="Catholic University of Brasília"
+            >
+              Universidade Católica de Brasília
+            </h4>
+
+            <p
+              data-pt="Formação sólida em algoritmos, estruturas de dados, engenharia de software e resolução estruturada de problemas computacionais."
+              data-en="Solid background in algorithms, data structures, software engineering, and analytical problem-solving."
+            >
+              Formação sólida em algoritmos, estruturas de dados, engenharia de software e resolução estruturada de problemas computacionais.
+            </p>
+
+            <div class="tags dark-tags">
+              <span data-pt="Algoritmos" data-en="Algorithms">Algoritmos</span>
+              <span data-pt="Engenharia de Software" data-en="Software Engineering">Engenharia de Software</span>
+              <span data-pt="Ciência da Computação" data-en="Computer Science">Ciência da Computação</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+
+            <span
+              class="timeline-date"
+              data-pt="SET/2026 — ATUAL"
+              data-en="SEP/2026 — PRESENT"
+            >
+              SET/2026 — ATUAL
+            </span>
+
+            <h3
+              data-pt="Estagiária de Desenvolvimento de Software"
+              data-en="Software Development Intern"
+            >
+              Estagiária de Desenvolvimento de Software
+            </h3>
+
+            <h4>CDS Solutions</h4>
+
+            <p
+              data-pt="Atuação no desenvolvimento de funcionalidades, integração com APIs REST e correção de bugs. Realização de testes para verificação de software e suporte à equipe utilizando Git/GitHub no fluxo diário."
+              data-en="Developing software features, integrating REST APIs, bug fixing, automated software testing, and collaborating with teams via Git/GitHub."
+            >
+              Atuação no desenvolvimento de funcionalidades, integração com APIs REST e correção de bugs. Realização de testes para verificação de software e suporte à equipe utilizando Git/GitHub no fluxo diário.
+            </p>
+
+            <div class="tags dark-tags">
+              <span data-pt="Desenvolvimento" data-en="Development">Desenvolvimento</span>
+              <span>APIs REST</span>
+              <span>Git / GitHub</span>
+              <span data-pt="Testes" data-en="Testing">Testes</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+
+            <span
+              class="timeline-date"
+              data-pt="NOV/2025 — FEV/2026"
+              data-en="NOV/2025 — FEB/2026"
+            >
+              NOV/2025 — FEV/2026
+            </span>
+
+            <h3
+              data-pt="Estagiária em Operações"
+              data-en="Operations Intern"
+            >
+              Estagiária em Operações
+            </h3>
+
+            <h4>SoloAgro</h4>
+
+            <p
+              data-pt="Organização, digitalização e conferência de dados de relatórios de campo e sistemas ERP. Identificação de inconsistências, garantia da qualidade da informação e elaboração de documentos técnicos/comerciais."
+              data-en="Organizing, digitizing, and verifying field report data and ERP systems. Quality assurance for corporate operational information."
+            >
+              Organização, digitalização e conferência de dados de relatórios de campo e sistemas ERP. Identificação de inconsistências, garantia da qualidade da informação e elaboração de documentos técnicos/comerciais.
+            </p>
+
+            <div class="tags dark-tags">
+              <span>ERP</span>
+              <span data-pt="Qualidade de Dados" data-en="Data Quality">Qualidade de Dados</span>
+              <span data-pt="Análise" data-en="Analysis">Análise</span>
+              <span data-pt="Processos" data-en="Processes">Processos</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+
+            <span
+              class="timeline-date"
+              data-pt="JUL/2024 — DEZ/2025"
+              data-en="JUL/2024 — DEC/2025"
+            >
+              JUL/2024 — DEZ/2025
+            </span>
+
+            <h3
+              data-pt="Desenvolvedora Front-end e Back-end"
+              data-en="Front-end and Back-end Developer"
+            >
+              Desenvolvedora Front-end e Back-end
+            </h3>
+
+            <h4>Porto Digital</h4>
+
+            <p
+              data-pt="Desenvolvimento de interfaces web responsivas (HTML, CSS, JS) e backend com Node.js. Operações CRUD, integração com bancos de dados, testes de APIs com Postman/Insomnia, padronização em Docker e práticas ágeis (Scrum/Kanban)."
+              data-en="Responsive front-end development (HTML, CSS, JS) and Node.js backend. Built CRUD operations, DB integrations, Docker containers, and Scrum/Kanban practices."
+            >
+              Desenvolvimento de interfaces web responsivas (HTML, CSS, JS) e backend com Node.js. Operações CRUD, integração com bancos de dados, testes de APIs com Postman/Insomnia, padronização em Docker e práticas ágeis (Scrum/Kanban).
+            </p>
+
+            <div class="tags dark-tags">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Docker</span>
+              <span>Postman</span>
+              <span>Scrum</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. VIVÊNCIAS -->
+    <section class="moments light-section section" id="momentos">
+      <!-- Brilhos animados na seção Vivências -->
+      <svg class="sparkle-decor sparkle-twinkle" style="top: 6%; left: 3%; width: 24px; height: 24px;" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-pulse" style="top: 45%; right: 2%; width: 22px; height: 22px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+
+      <div class="section-kicker reveal">
+        <span data-pt="05 / VIVÊNCIAS" data-en="05 / EXPERIENCES">05 / VIVÊNCIAS</span>
+        <span class="kicker-line"></span>
+        <span class="mono">BEYOND THE CODE</span>
+      </div>
+
+      <div class="moments-heading reveal">
+        <h2
+          data-pt="Eventos, comunidades<br><em>e rotina de estudos.</em>"
+          data-en="Events, communities<br><em>& study routine.</em>"
+        >
+          Eventos, comunidades<br><em>e rotina de estudos.</em>
+        </h2>
+
+        <p
+          data-pt="A tecnologia vai muito além da tela: eventos, hackathons, conexões com o mercado e muita prática."
+          data-en="Technology goes beyond the screen: events, hackathons, community networking, and hands-on practice."
+        >
+          A tecnologia vai muito além da tela: eventos, hackathons, conexões com o mercado e muita prática.
+        </p>
+      </div>
+
+      <div class="carousel-container reveal">
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">❮</button>
+
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="carouselTrack">
+
+            <article class="polaroid-card">
+              <div class="polaroid-img-box">
+                <img src="Componetes/Campus party.jpeg" alt="Campus Party" loading="lazy">
+              </div>
+
+              <div class="polaroid-caption">
+                <strong>Campus Party 🤖</strong>
+                <p
+                  data-pt="Mergulhando no universo da tecnologia e inovação."
+                  data-en="Immersing in the universe of technology and innovation."
+                >
+                  Mergulhando no universo da tecnologia e inovação.
+                </p>
+              </div>
+            </article>
+
+            <article class="polaroid-card">
+              <div class="polaroid-img-box">
+                <img src="Componetes/campus paty.jpeg" alt="Campus Party Estádio" loading="lazy">
+              </div>
+
+              <div class="polaroid-caption">
+                <strong>Campus Party • Estádio Mané Garrincha 🏟️</strong>
+                <p
+                  data-pt="Presença confirmada no maior evento de tecnologia."
+                  data-en="Confirmed presence at the biggest technology event."
+                >
+                  Presença confirmada no maior evento de tecnologia.
+                </p>
+              </div>
+            </article>
+
+            <article class="polaroid-card">
+              <div class="polaroid-img-box">
+                <img src="Componetes/grupo do coday.jpeg" alt="Grupo do Coday" loading="lazy">
+              </div>
+
+              <div class="polaroid-caption">
+                <strong
+                  data-pt="Apresentação no Coday 🚀"
+                  data-en="Coday Presentation 🚀"
+                >
+                  Apresentação no Coday 🚀
+                </strong>
+
+                <p
+                  data-pt="Equipe unida na apresentação do projeto FarmáciaSUS no Porto Digital."
+                  data-en="United team presenting the FarmáciaSUS project at Porto Digital."
+                >
+                  Equipe unida na apresentação do projeto FarmáciaSUS no Porto Digital.
+                </p>
+              </div>
+            </article>
+
+            <article class="polaroid-card">
+              <div class="polaroid-img-box">
+                <img src="Componetes/coday com representantes da extreme group.jpeg" alt="Coday Extreme Group" loading="lazy">
+              </div>
+
+              <div class="polaroid-caption">
+                <strong>Coday & Extreme Group 🤝</strong>
+                <p
+                  data-pt="Troca de experiências com líderes do mercado de tecnologia."
+                  data-en="Knowledge exchange with tech industry leaders."
+                >
+                  Troca de experiências com líderes do mercado de tecnologia.
+                </p>
+              </div>
+            </article>
+
+            <article class="polaroid-card">
+              <div class="polaroid-img-box">
+                <img src="Componetes/bsides.jpeg" alt="BSides Brasília" loading="lazy">
+              </div>
+
+              <div class="polaroid-caption">
+                <strong>BSides Brasília 🔐</strong>
+                <p
+                  data-pt="Conferência de segurança da informação e cibersegurança."
+                  data-en="Information security and cybersecurity conference."
+                >
+                  Conferência de segurança da informação e cibersegurança.
+                </p>
+              </div>
+            </article>
+
+            <article class="polaroid-card">
+              <div class="polaroid-img-box">
+                <img src="Componetes/estudos1.jpeg" alt="Setup de Estudos" loading="lazy">
+              </div>
+
+              <div class="polaroid-caption">
+                <strong>Desk & Code 💻</strong>
+                <p
+                  data-pt="Acompanhando aulas de Python, Pandas e análise de dados no meu setup."
+                  data-en="Studying Python, Pandas, and data analysis algorithms at my desk."
+                >
+                  Acompanhando aulas de Python, Pandas e análise de dados no meu setup.
+                </p>
+              </div>
+            </article>
+
+            <article class="polaroid-card">
+              <div class="polaroid-img-box">
+                <img src="Componetes/estudos.jpeg" alt="Estudos na Faculdade" loading="lazy">
+              </div>
+
+              <div class="polaroid-caption">
+                <strong
+                  data-pt="Noites de Aprendizado ☕"
+                  data-en="Learning Nights ☕"
+                >
+                  Noites de Aprendizado ☕
+                </strong>
+
+                <p
+                  data-pt="Praticando manipulação de arquivos e lógicas de automação."
+                  data-en="Practicing file manipulation and automation logic late into the night."
+                >
+                  Praticando manipulação de arquivos e lógicas de automação.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="carousel-btn next" id="carouselNext" aria-label="Próximo">❯</button>
+      </div>
+    </section>
+
+    <!-- 06. CONTATO -->
+    <section class="contact dark-section section" id="contato">
+      <!-- Brilhos animados na seção Contato -->
+      <svg class="sparkle-decor sparkle-float" style="top: 10%; right: 6%; width: 28px; height: 28px;" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+      <svg class="sparkle-decor sparkle-twinkle" style="bottom: 18%; left: 5%; width: 22px; height: 22px; color: var(--pink);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0 C12 6.6 6.6 12 0 12 C6.6 12 12 17.4 12 24 C12 17.4 17.4 12 24 12 C17.4 12 12 6.6 12 0 Z"/></svg>
+
+      <div class="section-kicker light-kicker reveal">
+        <span data-pt="06 / CONTATO" data-en="06 / CONTACT">06 / CONTATO</span>
+        <span class="kicker-line"></span>
+        <span class="mono">OPEN TO CONNECTIONS</span>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div>
+          <p
+            class="eyebrow"
+            data-pt="VAMOS CONSTRUIR?"
+            data-en="LET'S BUILD TOGETHER?"
+          >
+            VAMOS CONSTRUIR?
+          </p>
+
+          <h2
+            data-pt="Boas ideias<br>começam com<br><em>uma conversa.</em>"
+            data-en="Great ideas<br>start with<br><em>a conversation.</em>"
+          >
+            Boas ideias<br>começam com<br><em>uma conversa.</em>
+          </h2>
+        </div>
+
+        <div class="contact-copy">
+          <p
+            data-pt="Estou aberta a conexões, aprendizados e oportunidades profissionais em desenvolvimento de software, dados e automação."
+            data-en="Open to connections, knowledge exchange, and opportunities in software development, data, and automation."
+          >
+            Estou aberta a conexões, aprendizados e oportunidades profissionais em desenvolvimento de software, dados e automação.
+          </p>
+
+          <a
+            class="button button-primary"
+            href="mailto:alice14072005@gmail.com"
+            data-pt="Enviar um e-mail ↗"
+            data-en="Send an email ↗"
+          >
+            Enviar um e-mail ↗
+          </a>
+
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/alice-xavier-44765320a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a
+              href="https://github.com/AlicextDev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <a class="brand" href="#inicio">A<span>.</span></a>
+
+        <span
+          data-pt=" Dados · Automação · Desenvolvimento "
+          data-en=" Data · Automation · Software Development"
+        >
+          Dados · Automação · Desenvolvimento
+        </span>
+
+        <span>© <span id="year"></span> Alice Tavares</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
